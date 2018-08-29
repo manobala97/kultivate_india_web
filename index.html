@@ -15,6 +15,11 @@
       -webkit-border-radius: 16px;
     }
   </style>
+  <style>
+    #more {
+      display: none;
+    }
+  </style>
   <!-- <link rel="alternate" type="application/rss+xml" title="Atomlab &raquo; Feed" href="http://atomlab.thememove.com/feed/" /> -->
   <!-- <link rel="alternate" type="application/rss+xml" title="Atomlab &raquo; Comments Feed" href="http://atomlab.thememove.com/comments/feed/" -->
   <!-- /> -->
@@ -38,6 +43,113 @@
     media='all' />
   <link rel='stylesheet' id='atomlab-style-css' href='assets/themes/atomlab/style.min.css' type='text/css' media='all' />
   <style id='atomlab-style-inline-css' type='text/css'>
+
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 35%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: relative;
+
+  transition: all 200ms;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
+    #tm-heading-5b7a68be82d16 .heading {
+      font-size: 56px
+    }
+
+    #tm-box-icon-5b7a7827d0141 {
+      height: 500px;
+    }
+
+    #tm-box-icon-5b7a7827d0532 {
+      height: 500px;
+    }
+
+    #tm-box-icon-5b7a7827d087c {
+      height: 500px;
+    }
+
+    #tm-heading-5b7a68be82d16 {
+      text-align: left
+    }
+
+    #tm-heading-5b7a68be82d16 .heading {
+      max-width: 770px;
+      line-height: 1.2
+    }
+
+    @media( max-width:992px) {
+      #tm-heading-5b7a68be82d16 {
+        margin-left: -4px !important
+      }
+    }
+
+    @media(max-width:992px) {
+      #tm-heading-5b7a68be82d16 .heading {
+        font-size: 48px
+      }
+    }
+
     .primary-font,
     .tm-button,
     button,
@@ -1211,7 +1323,7 @@
     .header-07 .page-open-mobile-menu:hover i,
     .header-07 .page-open-main-menu:hover i,
     .header-07 .popup-search-wrap:hover i,
-    .header-07 .popup-search-wrap .search-submit:hover,
+    .header-07 .f-search-wrap .search-submit:hover,
     .header-07 .mini-cart .mini-cart-icon:hover,
     .header-07 .header-social-networks a:hover {
       color: #0b88ee;
@@ -2606,7 +2718,7 @@
                   <div class="branding">
                     <div class="branding__logo">
                       <a href="index.html" rel="home">
-                        <img style="height: 150px; width: 300px;" src="assets/themes/atomlab/assets/images/logo/white-logo.png" alt="Atomlab" class="light-logo">
+                        <img style="height: 120px; width: 200px;" src="assets/themes/atomlab/assets/images/logo/white-logo.png" alt="Atomlab" class="light-logo">
                         <img style="height: 100px; width: 200px" src="assets/themes/atomlab/assets/images/logo/home_logo.png" alt="Atomlab" class="dark-logo">
                         <img style="height: 80px; width: 200px" src="assets/themes/atomlab/assets/images/logo/home_logo.png" alt="Atomlab" class="sticky-logo">
                       </a>
@@ -2668,12 +2780,28 @@
                             <span class="menu-item-title">About us</span>
                           </a>
                         </li>
+
                         <li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24">
-                          <a href="contact.html">
-                            <span class="menu-item-title">Contact</span>
-                            <span class="toggle-sub-menu"> </span>
-                          </a>
+                          <div class="box">
+                            <a class="button" href="#popup1">Contact</a>
+                          </div>
+                          
+                          <div id="popup1" class="overlay">
+                            <div class="popup search ">
+                                <div  style="font-size: 25px; text-align: center;">Contact</div>
+                              <div class="content">
+                                <img style="height: 200px;" src="assets/themes/atomlab/assets/images/logo/k-logo.png">
+                                <div style="font-size: 25px; color: #0b88ee; padding-bottom: 4px;">Kultivate India Software Pvt. Ltd.</div>
+                                <div style="padding-bottom: 30px;"> Smart tools for Profitable Agricultural Enterprises</div>
+                                <div style="font-size: 16px; color: rgb(88, 85, 85);"> <img style="" src="assets/themes/atomlab/assets/images/icon/mobile1.png">+91-9003832999 | +91 9578657094</div>
+                                <div style="font-size: 16px; padding-bottom: 10px; color: rgb(88, 85, 85);"><img src="assets/themes/atomlab/assets/images/icon/email2.png"> help@Kultivate.in</div>
+                                <div style="font-size: 30px;">Coimbatore | Hyderabad</div>
+                              </div>
+                              <a style="text-align: right; color: greenyellow" class="close" href="#">Close</a>
+                            </div>
+                          </div>
                         </li>
+
                       </ul>
                     </nav>
                   </div>
@@ -2708,9 +2836,67 @@
                                   <h3 class="heading" style=""> Amazing Experience</h3>
                                 </div> -->
                                 <div class="tm-spacer" id="tm-spacer-5b7a665e9dad7"></div>
-                                <div class="tm-heading center  tm-animation move-up" id="tm-heading-5b7a665e9dc6c">
-                                  <h3 class="heading" style=" font-size: 35px"> Smart Tools for Profitable Agricultural Enterprises</h3>
+                                <script> 
+                                  TxtRotate = function (el, toRotate, period) {
+                                    this.toRotate = toRotate;
+                                    this.el = el;
+                                    this.loopNum = 0;
+                                    this.period = parseInt(period, 10) || 2000;
+                                    this.txt = '';
+                                    this.tick();
+                                    this.isDeleting = false;
+
+                                  };
+                                  TxtRotate.prototype.tick = function () {
+                                    var i = this.loopNum % this.toRotate.length;
+                                    var fullTxt = this.toRotate[i];
+                                    if (this.isDeleting) {
+                                      this.txt = fullTxt.substring(0, this.txt.length - 1);
+                                    } else {
+                                      this.txt = fullTxt.substring(0, this.txt.length + 1);
+                                    }
+                                    this.el.innerHTML = this.txt + '|';
+                                    var that = this;
+                                    var delta = 150 - Math.random() * 99;
+                                    if (this.isDeleting) {
+                                      delta /= 2;
+                                    } if (!this.isDeleting && this.txt === fullTxt) {
+                                      delta = this.period;
+                                      this.isDeleting = true;
+                                    } else if (this.isDeleting && this.txt === '') {
+                                      this.isDeleting = false;
+                                      this.loopNum++;
+                                      delta = 500;
+                                    } setTimeout(function () {
+                                      that.tick();
+                                    },
+                                      delta);
+                                  };
+                                  window.onload = function () {
+                                    var elements = document.getElementsByClassName('txt-rotate');
+                                    for (var i = 0;
+                                      i < elements.length; i++) {
+                                      var toRotate = elements[i].getAttribute('data-rotate');
+                                      var period = elements[i].getAttribute('data-period');
+                                      if (toRotate) {
+                                        new TxtRotate(elements[i],
+                                          JSON.parse(toRotate), period);
+                                      }
+                                    } // INJECT CSS
+                                    //  var css = document.createElement("style");
+                                    //  css.type = "text/css"; 
+                                    //  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+                                    //  document.body.appendChild(css);
+                                  };
+                                </script>
+                                <div>
+                                  <h1 style="font-family: 'Raleway', sans-serif; font-size: 30px; text-align: center; color: #eff3f7">
+                                    <span class="txt-rotate" data-period="2000" data-rotate='[ "Smart Tools for Profitable Agricultural Enterprises", "Change the way India Kultivate" ]'></span>
+                                  </h1>
                                 </div>
+                                <!-- <div class="tm-heading center  tm-animation move-up" id="tm-heading-5b7a665e9dc6c">
+                                  <h3 class="heading" style=" font-size: 35px"> Smart Tools for Profitable Agricultural Enterprises</h3>
+                                </div> -->
                                 <div class="tm-spacer" id="tm-spacer-5b7a665e9dfac"></div>
                                 <div class="tm-button-wrapper  tm-animation move-up" id="tm-button-5b7a665e9e118">
                                   <a class="tm-button style-flat tm-button-custom tm-button-primary smooth-scroll-link" href="#welcome-section">
@@ -2766,6 +2952,23 @@
                           </h2>
                         </div>
                         <div class="tm-spacer" id="tm-spacer-5b7a665e9fb43"></div>
+                        <script>
+                          function myFunction() {
+                            var dots = document.getElementById("dots");
+                            var moreText = document.getElementById("more");
+                            var btnText = document.getElementById("myBtn");
+
+                            if (dots.style.display == "none") {
+                              dots.style.display = "inline";
+                              btnText.innerHTML = "Read more";
+                              moreText.style.display = "none";
+                            } else {
+                              dots.style.display = "none";
+                              btnText.innerHTML = "Read less";
+                              moreText.style.display = "inline";
+                            }
+                          }
+                        </script>
                         <div class="tm-heading  tm-animation move-up">
                           <div style="font-size: 18px;text-align: justify;" class="text">
                             Agriculture is a tradition followed from long back. Once the tradition changing to business to feed the world population
@@ -2776,8 +2979,35 @@
                             way. We are working on ICT in Agriculture - 5 states more than 15,000 farmers. Kultivate life
                             - a free consultancy app for farmers which aims to reduce the input cost by way of sustainable
                             cultivation and proper advisory to take immediate measures whenever the problem is identified
-                            in the field.
+                            in the field
+                            <span id="dots">...</span>
+                            <span id="more">
+
+                              <p>Increasing yield by genetic approaches is a thing of last decades. Yield improvements by genetics
+                                reached a plateau already. Our land and water resources are not expanding, if anything deteriorating.
+                                However, at kultivate, we believe the technologies and varieties developed by Indian researchers
+                                are enough to double the productivity. Only catch is farmers need to follow them systematically.
+                                A proper ag-extension approach is critical to make this a possibility. The traditional approaches,
+                                with 1:4000 officer-to-farm ratio make it impossible to even imagine. </p>
+
+                              <p>Kultivate is an innovative platform developed to make agricultural Extension Easy for Everyone.
+                                [E3]. We bunch of graduates from agricultural and information technology are aiming to bring
+                                in a paradigm shift in the way scientist interact/track/advice with farmers. Our aim is to
+                                use latest information technology to enable agricultural scientists and enterprises to provide
+                                better service to farmers. This also benefits the scientist and enterprises with efficiency,
+                                cost and rich data science opportunities. </p>
+
+                              <p>Our purpose built tools are already used by corporates, ag-enterprises and FPOs. We are official
+                                ICT partner for Manage, Hyderabad, IIIT Hyderabad and TNAU. We were also invited to be part
+                                of the group to interact with Vice President of India on using ICT tools to enable Indian
+                                agriculture.
+                              </p>
+                            </span>
                           </div>
+                          <button onclick="myFunction()" id="myBtn">Read more</button>
+
+
+
                         </div>
                         <div class="tm-spacer" id="tm-spacer-5b7a665ea0008"></div>
                         <!-- <div id="welcome" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row vc_row-outer vc_row-fluid"> -->
@@ -2801,7 +3031,8 @@
                                   <div class="content-wrap">
 
                                     <div class="image">
-                                      <img src="assets/themes/atomlab/assets/images/products/kultivate_logo.jpg" alt="" /> </div>
+                                      <img style="height: 200px; padding-left: 30px" src="assets/themes/atomlab/assets/images/products/kultivate_logo.jpg" alt="Kultivate"
+                                      /> </div>
 
 
                                     <div class="content">
@@ -2830,7 +3061,7 @@
                                   <div class="content-wrap">
 
                                     <div class="image">
-                                      <img src="assets/themes/atomlab/assets/images/products/kultivate_logo.jpg" alt="" /> </div>
+                                      <img style="height: 200px; padding-left: 30px" src="" alt="Customizable-Product" /> </div>
 
 
                                     <div class="content">
@@ -2860,7 +3091,7 @@
                                   <div class="content-wrap">
 
                                     <div class="image">
-                                      <img style="height: 290px;" src="assets/themes/atomlab/assets/images/products/klife.png" alt="" /> </div>
+                                      <img style="height: 200px; padding-left: 30px" src="assets/themes/atomlab/assets/images/products/klife.png" alt="" /> </div>
 
 
                                     <div class="content">
@@ -3056,6 +3287,24 @@
                       </div>
                     </div>
                   </div>
+                  <!-- <div id="tm-column-5b7a665ea7ffd" class="wpb_column vc_column_container vc_col-sm-3">
+                    <div>
+                      <div class="wpb_wrapper">
+                        <div id="tm-counter-5b7a665ea8164" class="tm-counter  style-1 align-center skin-light" data-animation="counter-up">
+                          <div class="counter-wrap">
+                            <div class="icon">
+                              <img style="height: 100px;" src="assets/themes/atomlab/assets/images/counter/cropworth.jpg">
+                            </div>
+                            <div class="number-wrap">
+                              <h6 class="text">Rs</h6>
+                              <span class="number">200</span>
+                            </div>
+                            <h6 class="text">Crores</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
                 </div>
                 <div class="vc_row-full-width vc_clearfix"></div>
                 <div id="tm-row-5b7a665ea89e3" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row vc_row-outer vc_row-fluid vc_row-o-content-middle vc_row-flex">
@@ -3161,42 +3410,60 @@
                       <div class="wpb_wrapper">
                         <div class="tm-heading left  tm-animation move-up" id="tm-heading-5b7a665eab641">
                           <h3 class="heading" style="">
-                            <mark>Everything</mark> You Need In One Place</h3>
+                            <mark>Customizable</mark> Software Suite for</h3>
                         </div>
                         <div class="tm-spacer" id="tm-spacer-5b7a665eab954"></div>
                         <div class="tm-accordion  style-1" id="tm-accordion-5b7a665eaba7f">
                           <div class="accordion-section active">
                             <div class="accordion-title-wrapper">
                               <mark class="accordion-marker">01</mark>
-                              <h6 class="accordion-title">Fully Responsive</h6>
+                              <h6 class="accordion-title">Agri <mark>Business</mark></h6>
                               <span class="accordion-icon"></span>
                             </div>
                             <div class="accordion-content">
-                              Atomlab is intended to be highly responsive and customizable for site building process. Thanks to its devoted, fastidious,
-                              and compact design, Atomlab can be considered among plenty of unique themes that serve to create
-                              highly responsive websites. </div>
+                            <li>Contract Framing Companies</li>  
+                            <li>Seed Companies</li>  
+                            <li>Plantations</li>  
+                            </div>
                           </div>
                           <div class="accordion-section ">
                             <div class="accordion-title-wrapper">
                               <mark class="accordion-marker">02</mark>
-                              <h6 class="accordion-title">Free Trial</h6>
+                              <h6 class="accordion-title">Farmer <mark>Organization</mark></h6>
                               <span class="accordion-icon"></span>
                             </div>
                             <div class="accordion-content">
-                              If you are excited to know more about this theme, you can try it out for free before deciding to purchase. Even after making
-                              your purchase, if you find it unsatisfactory, you can always make a refund request to the theme
-                              marketplace administrator to get your money back. </div>
+                            <li>FPOs</li>  
+                            <li>Grower Associations</li>  
+                            <li>NGOs</li>  
+                            </div>
                           </div>
                           <div class="accordion-section ">
                             <div class="accordion-title-wrapper">
                               <mark class="accordion-marker">03</mark>
-                              <h6 class="accordion-title">Excellent Support</h6>
+                              <h6 class="accordion-title">Big <mark>Farms</mark></h6>
                               <span class="accordion-icon"></span>
                             </div>
                             <div class="accordion-content">
-                              If you have any problem or difficulty during the process of working with Atomlab, you should contact our customer support
-                              team. Our team of professional and skilled staff will reply as soon as possible and propose
-                              you with the best solution to tackle the issues. </div>
+                              </div>
+                          </div>
+                          <div class="accordion-section ">
+                            <div class="accordion-title-wrapper">
+                              <mark class="accordion-marker">04</mark>
+                              <h6 class="accordion-title">Supply <mark>Chains</mark></h6>
+                              <span class="accordion-icon"></span>
+                            </div>
+                            <div class="accordion-content">
+                            </div>
+                          </div>
+                          <div class="accordion-section ">
+                            <div class="accordion-title-wrapper">
+                              <mark class="accordion-marker">05</mark>
+                              <h6 class="accordion-title">Research <mark>Projects</mark></h6>
+                              <span class="accordion-icon"></span>
+                            </div>
+                            <div class="accordion-content">
+                            </div>
                           </div>
                         </div>
                         <div class="tm-spacer" id="tm-spacer-5b7a665eabb6a"></div>
@@ -3208,7 +3475,7 @@
                       <div class="wpb_wrapper">
                         <div class="tm-image  tm-animation move-up" id="tm-image-5b7a665eabe66">
                           <div class="image">
-                            <img src="assets/uploads/2017/12/startup-03-image-02.png" alt="startup-03-image-02" />
+                            <img src="assets/themes/atomlab/assets/images/custom.png" alt="Customizables software suite" />
                           </div>
                         </div>
                       </div>
@@ -3235,35 +3502,45 @@
                       <div class="vc_column-inner ">
                         <div class="wpb_wrapper">
                           <div class="tm-image  tm-animation move-up" id="tm-image-5b7a6606a72f2">
-                            <div style="height:100px;width: 100px;">
-                              <img src="assets/themes/atomlab/assets/images/logo/home_logo.png" alt="logo_dark_medium" />
+                            <div>
+                              <img style="height: 200px;" src="assets/themes/atomlab/assets/images/logo/kultivate_logo.jpg" alt="Kultivate" />
                             </div>
                           </div>
-                          <div class="tm-spacer" id="tm-spacer-5b7a6606a77d8"></div>
+                          <!-- <div class="tm-spacer" id="tm-spacer-5b7a6606a77d8"></div>
                           <div class="tm-heading left  tm-animation move-up" id="tm-heading-5b7a6606a79c6">
-                            <div class="heading" style="font-size: 12px;">
+                            <div class="heading" style="font-size: 14px;">
                               We simply provide a state-of-art global platform which an enterprise or government body or an individual can use locally
                               to disseminate agricultural information and collect real-time data efficiently.
                             </div>
-                          </div>
-                          <div class="tm-spacer" id="tm-spacer-5b7a6606a7db6"></div>
+                          </div> -->
+                          
                         </div>
                       </div>
                     </div>
+                  
                     <div id="tm-column-5b7a6606a7f63" class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-2 vc_col-md-3">
-                      <div class="vc_column-inner ">
+                      <div class="vc_column-inner">
                         <div class="wpb_wrapper">
                           <div class="vc_wp_custommenu wpb_content_element">
                             <div class="widget widget_nav_menu">
-                              <h2 class="widgettitle">About Us</h2>
+                              <h2 class="widgettitle">Produt</h2>
                               <div class="menu-footer-about-us-container">
                                 <ul id="menu-footer-about-us" class="menu">
-                                  <li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34">
+                                  <!-- <li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34">
                                     <a href="our_services.html">Our Services</a>
+                                  </li> -->
+                                  <li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33">
+                                    <a href="kultivate_product.html">Kultivate-Product</a>
                                   </li>
                                   <li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33">
-                                    <a href="contact.html">Contact Us</a>
+                                    <a href="kultivate_customizable_product.html">Customized-K-Product</a>
                                   </li>
+                                  <li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33">
+                                    <a href="kultivate_life_product.html">Kultivate-Life</a>
+                                  </li>
+                                  <!-- <li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33">
+                                    <a href="contact.html">Contact Us</a>
+                                  </li> -->
                                 </ul>
                               </div>
                             </div>
@@ -3278,62 +3555,68 @@
                             <div class="widget widget_text">
                               <h2 class="widgettitle">CONTACT US</h2>
                               <div class="textwidget">
-                                </p>
-                                <div>302, Srevatsa Shankara Aptmt, Annur Road, Coimbatore</div>
-                                <div>
-                                  <a href="mboobalan1997@gmail.com">contact@atomlab.com</a>
-                                </div>
-                                <div>
-                                  <b>9677332085</b>
-                                </div>
                                 <p>
+                                  <div></div>
+                                  <div>
+                                    <div>+91-9003832999</div>
+                                    <div>+91-9578657094 </div>
+                                  </div>
+                                  <div>
+                                    <a>help@kultivate.in</a>
+                                  </div>
+                                 
+                                </p>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div id="tm-column-5b7a6606a9085" class="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3">
+                    <div id="" class="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3">
                       <div class="vc_column-inner ">
                         <div class="wpb_wrapper">
-                          <div id="tm-twitter-5b7a6606a92ef" class="tm-twitter  style-slider-quote">
+                          <div  class="tm-twitter  style-slider-quote">
                             <div class="tm-swiper" data-loop="1" data-lg-gutter="30" data-autoplay="3000" data-speed="1000">
                               <div class="swiper-container">
                                 <div class=" swiper-wrapper">
                                   <div class="swiper-slide">
                                     <div class="tweet">
-                                      <div class="tweet-text">Free. feat. &nbsp;
-                                        <a href="http://twitter.com/vondotco" target="_blank">vondotco</a>&nbsp; &nbsp;
-                                        <a href="https://t.co/MHI8k6CnyY" target="_blank">https://www.facebook.com/kultivateit/</a>&nbsp; &nbsp;
-                                        <a href="https://t.co/K0e5pRN8y9" target="_blank">https://t.co/K0e5pRN8y9</a>&nbsp;</div>
-                                      <div class="tweet-info">
+                                      <div class="tweet-text">Lets keep the rivers clean. &nbsp;
+                                        <a href="https://www.facebook.com/kultivateit/photos/a.455460301579381/506901719768572/?type=3&theater" target="_blank">to the sustainable</a>&nbsp; &nbsp;
+                                        </div>
+                                      <div class="row">
+                                        <img style="padding-left: 15px;" src="assets/themes/atomlab/assets/images/icon/fb.png">
                                         <h6 class="tweet-heading">
-                                          Unsplash </h6>
-                                        <span class="tweet-date">August 20, 2018</span>
-                                      </div>
+                                          kultivateit </h6>
+                                        </div>
+                                        <span class="tweet-date">August 3, 2018</span>
                                     </div>
                                   </div>
                                   <div class="swiper-slide">
                                     <div class="tweet">
-                                      <div class="tweet-text">facebook &nbsp;
-                                        <a href="https://t.co/5NOAueUFcu" target="_blank">https://www.facebook.com/kultivateit/</a>&nbsp;</div>
-                                      <div class="tweet-info">
-                                        <h6 class="tweet-heading">
-                                          Unsplash </h6>
-                                        <span class="tweet-date">August 19, 2018</span>
+                                      <div class="tweet-text">kultivate life. &nbsp;
+                                        <a href="https://www.facebook.com/kultivateit/photos/a.455460301579381/506901719768572/?type=3&theater" target="_blank">
+                                        free consultancy mobile app for farmers</a>&nbsp; &nbsp;
                                       </div>
+                                      <div class="row">
+                                        <img style="padding-left: 15px;" src="assets/themes/atomlab/assets/images/icon/fb.png">
+                                        <h6 class="tweet-heading">
+                                          kultivateit </h6>
+                                        </div>
+                                        <span class="tweet-date">July 26, 2018</span>
                                     </div>
                                   </div>
                                   <div class="swiper-slide">
                                     <div class="tweet">
-                                      <div class="tweet-text">&nbsp;
-                                        <a href="http://twitter.com/majortomm" target="_blank">majortomm</a>&nbsp; Wow! Congrats on the big milestone, Thomas 🙌🎉 &nbsp;
-                                        <a href="https://t.co/lEpByaPZNb" target="_blank">https://t.co/lEpByaPZNb</a>&nbsp;</div>
-                                      <div class="tweet-info">
-                                        <h6 class="tweet-heading">
-                                          Unsplash </h6>
-                                        <span class="tweet-date">August 19, 2018</span>
+                                      <div class="tweet-text">Milestone in Kultivate's journey &nbsp;
+                                        <a href="https://www.facebook.com/kultivateit/photos/a.455460301579381/506901719768572/?type=3&theater" target="_blank">Digitizing Indian Agriculture</a>&nbsp; &nbsp;
                                       </div>
+                                      <div class="row">
+                                        <img style="padding-left: 15px;" src="assets/themes/atomlab/assets/images/icon/fb.png">
+                                        <h6 class="tweet-heading">
+                                          kultivateit </h6>
+                                        </div>
+                                        <span class="tweet-date">July 12, 2018</span>
                                     </div>
                                   </div>
                                 </div>
@@ -3343,47 +3626,47 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div id="tm-row-5b7a6606a98d8" class="vc_row vc_row-outer vc_row-fluid">
-                    <div id="tm-column-5b7a6606a9bc5" class="wpb_column vc_column_container vc_col-sm-12">
-                      <div class="vc_column-inner ">
-                        <div class="wpb_wrapper">
-                          <div id="tm-row-inner-5b7a6606a9dce" class="vc_row vc_inner vc_row-fluid vc_row-o-content-middle vc_row-flex">
-                            <div id="tm-column-inner-5b7a6606a9fac" class="wpb_column vc_column_container vc_col-sm-6">
-                              <div class="vc_column-inner ">
-                                <div class="wpb_wrapper">
-                                  <div class="tm-heading left highlight-text tm-animation move-up" id="tm-heading-5b7a6606aa1b7">
-                                    <div class="heading" style=""> © 2018
-                                      <mark>Kultivate India</mark>. All Rights Reserved. Terms & Privacy.</div>
+                    <div id="tm-row-5b7a6606a98d8" class="vc_row vc_row-outer vc_row-fluid">
+                      <div id="tm-column-5b7a6606a9bc5" class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner ">
+                          <div class="wpb_wrapper">
+                            <div id="tm-row-inner-5b7a6606a9dce" class="vc_row vc_inner vc_row-fluid vc_row-o-content-middle vc_row-flex">
+                              <div id="tm-column-inner-5b7a6606a9fac" class="wpb_column vc_column_container vc_col-sm-6">
+                                <div class="vc_column-inner ">
+                                  <div class="wpb_wrapper">
+                                    <div class="tm-heading left highlight-text tm-animation move-up" id="tm-heading-5b7a6606aa1b7">
+                                      <div class="heading" style=""> © 2018
+                                        <mark>Kultivate India</mark>. All Rights Reserved. Terms & Privacy.</div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                            <div id="tm-column-inner-5b7a6606aa66e" class="wpb_column vc_column_container vc_col-sm-6">
-                              <div class="vc_column-inner ">
-                                <div class="wpb_wrapper">
-                                  <ul class="tm-social-networks  style-icons layout-inline" id="tm-social-networks-5b7a6606aa811">
-                                    <li class="item">
-                                      <a href="#" target="_blank" aria-label="Twitter" class="link hint--bounce hint--top">
-                                        <i class="ion-social-twitter link-icon"></i>
-                                      </a>
-                                    </li>
-                                    <li class="item">
-                                      <a href="https://www.facebook.com/kultivateit/" target="_blank" aria-label="Facebook" class="link hint--bounce hint--top">
-                                        <i class="ion-social-facebook link-icon"></i>
-                                      </a>
-                                    </li>
-                                    <li class="item">
-                                      <a href="#" target="_blank" aria-label="Google+" class="link hint--bounce hint--top">
-                                        <i class="ion-social-googleplus link-icon"></i>
-                                      </a>
-                                    </li>
-                                    <li class="item">
-                                      <a href="#" target="_blank" aria-label="Linkedin" class="link hint--bounce hint--top">
-                                        <i class="ion-social-linkedin link-icon"></i>
-                                      </a>
-                                    </li>
-                                  </ul>
+                              <div id="tm-column-inner-5b7a6606aa66e" class="wpb_column vc_column_container vc_col-sm-6">
+                                <div class="vc_column-inner ">
+                                  <div class="wpb_wrapper">
+                                    <ul class="tm-social-networks  style-icons layout-inline" id="tm-social-networks-5b7a6606aa811">
+                                      <li class="item">
+                                        <a href="#" target="_blank" aria-label="Twitter" class="link hint--bounce hint--top">
+                                          <i class="ion-social-twitter link-icon"></i>
+                                        </a>
+                                      </li>
+                                      <li class="item">
+                                        <a href="https://www.facebook.com/kultivateit/" target="_blank" aria-label="Facebook" class="link hint--bounce hint--top">
+                                          <i class="ion-social-facebook link-icon"></i>
+                                        </a>
+                                      </li>
+                                      <li class="item">
+                                        <a href="#" target="_blank" aria-label="Google+" class="link hint--bounce hint--top">
+                                          <i class="ion-social-googleplus link-icon"></i>
+                                        </a>
+                                      </li>
+                                      <li class="item">
+                                        <a href="#" target="_blank" aria-label="Linkedin" class="link hint--bounce hint--top">
+                                          <i class="ion-social-linkedin link-icon"></i>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -3391,6 +3674,7 @@
                         </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -3779,7 +4063,6 @@
       }
 
       #tm-image-5b7a665eabe66 {
-        margin-right: -130px !important
       }
 
       #tm-row-5b7a665eac417 {
