@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5ce15bc-0416-4fa6-8988-52aadfeba2bd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/themes/atomlab/assets/images/homepage/modular01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/themes/atomlab/assets/images/homepage/modular02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/themes/atomlab/assets/images/homepage/modular03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/themes/atomlab/assets/images/homepage/support01.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/themes/atomlab/assets/images/custom.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/themes/atomlab/assets/images/custom.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/themes/atomlab/assets/images/logo/k-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/themes/atomlab/assets/images/logo/k-logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,17 +19,14 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="3594" column="28" selection-start-line="3594" selection-start-column="28" selection-end-line="3594" selection-end-column="28" />
+            <state relative-caret-position="438">
+              <caret line="3530" column="37" selection-start-line="3527" selection-start-column="37" selection-end-line="3530" selection-end-column="37" />
               <folding>
                 <element signature="e#106366#106420#0" expanded="true" />
                 <element signature="e#123360#123382#0" expanded="true" />
-                <element signature="e#127028#127102#0" expanded="true" />
-                <element signature="e#127887#127918#0" expanded="true" />
-                <element signature="e#129662#129697#0" expanded="true" />
-                <element signature="e#130566#130585#0" expanded="true" />
-                <element signature="e#131484#131519#0" expanded="true" />
+                <element signature="e#134343#134705#0" />
                 <element signature="e#134552#134626#0" expanded="true" />
+                <element signature="e#134763#138493#0" />
                 <element signature="e#136705#136741#0" expanded="true" />
                 <element signature="e#136274#136334#0" expanded="true" />
                 <element signature="e#136913#136947#0" expanded="true" />
@@ -43,7 +34,24 @@
                 <element signature="e#137346#137365#0" expanded="true" />
                 <element signature="e#137606#137640#0" expanded="true" />
                 <element signature="e#137830#137890#0" expanded="true" />
-                <element signature="e#139787#139861#0" expanded="true" />
+                <element signature="e#131452#131526#0" expanded="true" />
+                <element signature="e#131630#132433#0" />
+                <element signature="e#131801#131834#0" expanded="true" />
+                <element signature="e#131986#132013#0" expanded="true" />
+                <element signature="e#133015#133048#0" expanded="true" />
+                <element signature="e#133200#133226#0" expanded="true" />
+                <element signature="e#133992#134972#0" />
+                <element signature="e#134163#134196#0" expanded="true" />
+                <element signature="e#134348#134374#0" expanded="true" />
+                <element signature="e#135116#136043#0" />
+                <element signature="e#135287#135320#0" expanded="true" />
+                <element signature="e#135472#135498#0" expanded="true" />
+                <element signature="e#136264#137191#0" />
+                <element signature="e#136435#136468#0" expanded="true" />
+                <element signature="e#136620#136646#0" expanded="true" />
+                <element signature="e#137118#137899#0" />
+                <element signature="e#137289#137322#0" expanded="true" />
+                <element signature="e#137474#137500#0" expanded="true" />
                 <element signature="e#31#37#0" expanded="true" />
                 <element signature="e#37#43#0" expanded="true" />
                 <element signature="e#43#49#0" expanded="true" />
@@ -54,6 +62,11 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modular03.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/themes/atomlab/assets/images/homepage/modular03.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="custom.png" pinned="false" current-in-tab="false">
@@ -212,18 +225,18 @@
       <option name="presentableId" value="Default" />
       <updated>1535629217690</updated>
       <workItem from="1535629221074" duration="10823000" />
-      <workItem from="1535951189961" duration="15365000" />
+      <workItem from="1535951189961" duration="20426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26188000" />
+    <option name="totallyTimeSpent" value="31249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1375" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963072" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24963072" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -256,12 +269,9 @@
           <folding>
             <element signature="e#106366#106420#0" expanded="true" />
             <element signature="e#123360#123382#0" expanded="true" />
-            <element signature="e#127028#127102#0" expanded="true" />
-            <element signature="e#127887#127918#0" expanded="true" />
-            <element signature="e#129662#129697#0" expanded="true" />
-            <element signature="e#130566#130585#0" expanded="true" />
-            <element signature="e#131484#131519#0" expanded="true" />
+            <element signature="e#134343#134705#0" />
             <element signature="e#134552#134626#0" expanded="true" />
+            <element signature="e#134763#138493#0" />
             <element signature="e#136705#136741#0" expanded="true" />
             <element signature="e#136274#136334#0" expanded="true" />
             <element signature="e#136913#136947#0" expanded="true" />
@@ -269,7 +279,24 @@
             <element signature="e#137346#137365#0" expanded="true" />
             <element signature="e#137606#137640#0" expanded="true" />
             <element signature="e#137830#137890#0" expanded="true" />
-            <element signature="e#139787#139861#0" expanded="true" />
+            <element signature="e#131452#131526#0" expanded="true" />
+            <element signature="e#131630#132433#0" />
+            <element signature="e#131801#131834#0" expanded="true" />
+            <element signature="e#131986#132013#0" expanded="true" />
+            <element signature="e#133015#133048#0" expanded="true" />
+            <element signature="e#133200#133226#0" expanded="true" />
+            <element signature="e#133992#134972#0" />
+            <element signature="e#134163#134196#0" expanded="true" />
+            <element signature="e#134348#134374#0" expanded="true" />
+            <element signature="e#135116#136043#0" />
+            <element signature="e#135287#135320#0" expanded="true" />
+            <element signature="e#135472#135498#0" expanded="true" />
+            <element signature="e#136264#137191#0" />
+            <element signature="e#136435#136468#0" expanded="true" />
+            <element signature="e#136620#136646#0" expanded="true" />
+            <element signature="e#137118#137899#0" />
+            <element signature="e#137289#137322#0" expanded="true" />
+            <element signature="e#137474#137500#0" expanded="true" />
             <element signature="e#31#37#0" expanded="true" />
             <element signature="e#37#43#0" expanded="true" />
             <element signature="e#43#49#0" expanded="true" />
@@ -327,9 +354,6 @@
     <entry file="file://$PROJECT_DIR$/assets/themes/atomlab/assets/images/homepage/support01.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/themes/atomlab/assets/images/homepage/modular03.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/themes/atomlab/assets/images/homepage/modular02.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -348,19 +372,19 @@
     <entry file="file://$PROJECT_DIR$/assets/themes/atomlab/assets/images/custom.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/themes/atomlab/assets/images/homepage/modular03.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="3594" column="28" selection-start-line="3594" selection-start-column="28" selection-end-line="3594" selection-end-column="28" />
+        <state relative-caret-position="438">
+          <caret line="3530" column="37" selection-start-line="3527" selection-start-column="37" selection-end-line="3530" selection-end-column="37" />
           <folding>
             <element signature="e#106366#106420#0" expanded="true" />
             <element signature="e#123360#123382#0" expanded="true" />
-            <element signature="e#127028#127102#0" expanded="true" />
-            <element signature="e#127887#127918#0" expanded="true" />
-            <element signature="e#129662#129697#0" expanded="true" />
-            <element signature="e#130566#130585#0" expanded="true" />
-            <element signature="e#131484#131519#0" expanded="true" />
+            <element signature="e#134343#134705#0" />
             <element signature="e#134552#134626#0" expanded="true" />
+            <element signature="e#134763#138493#0" />
             <element signature="e#136705#136741#0" expanded="true" />
             <element signature="e#136274#136334#0" expanded="true" />
             <element signature="e#136913#136947#0" expanded="true" />
@@ -368,7 +392,24 @@
             <element signature="e#137346#137365#0" expanded="true" />
             <element signature="e#137606#137640#0" expanded="true" />
             <element signature="e#137830#137890#0" expanded="true" />
-            <element signature="e#139787#139861#0" expanded="true" />
+            <element signature="e#131452#131526#0" expanded="true" />
+            <element signature="e#131630#132433#0" />
+            <element signature="e#131801#131834#0" expanded="true" />
+            <element signature="e#131986#132013#0" expanded="true" />
+            <element signature="e#133015#133048#0" expanded="true" />
+            <element signature="e#133200#133226#0" expanded="true" />
+            <element signature="e#133992#134972#0" />
+            <element signature="e#134163#134196#0" expanded="true" />
+            <element signature="e#134348#134374#0" expanded="true" />
+            <element signature="e#135116#136043#0" />
+            <element signature="e#135287#135320#0" expanded="true" />
+            <element signature="e#135472#135498#0" expanded="true" />
+            <element signature="e#136264#137191#0" />
+            <element signature="e#136435#136468#0" expanded="true" />
+            <element signature="e#136620#136646#0" expanded="true" />
+            <element signature="e#137118#137899#0" />
+            <element signature="e#137289#137322#0" expanded="true" />
+            <element signature="e#137474#137500#0" expanded="true" />
             <element signature="e#31#37#0" expanded="true" />
             <element signature="e#37#43#0" expanded="true" />
             <element signature="e#43#49#0" expanded="true" />
